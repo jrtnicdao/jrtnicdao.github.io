@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Home</title>
-<link type="text/css" rel="stylesheet"
-href="css/my-first-stylesheet.css"/>
-</head>
-<body>
-<nav>
-<ul>
-<li class=selected>Home</li>
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="our-songs.html">Our Songs</a></li>
-<li><a href="see-us-play.html">See Us Play</a></li>
-<li><a href="playing-a-concert.html">Playing a Concert</a></li>
-</ul>
-</nav>
-<h1>We are the Nanonauts!</h1>
-<p><img src="images/nanonauts.jpg" alt="Picture of the Nanonauts"/></p>
-<p>
-<img id="display-image" onclick="swapImage()" src="images/NINJA_GREEN.png" width="180" height="240"/>
-</p>
-<p>Click the image to change it!</p>
-<script>
-function swapImage() {
-var imageDisplayed = document.getElementById('display-image');
-if (imageDisplayed.src.match("images/NINJA_GREEN.png")) {
-imageDisplayed.src = "images/NINJA_BLUE.png";
-}
-else {
-imageDisplayed.src = "images/NINJA_GREEN.png";
-}
-}
-</script>
-<p>This is our website. Click on a link to visit a page:</p>
-<a href="https://youtu.be/bTk54gRVryk">Visit the Nanonauts on YouTube!</a>
-<ul>
-<li><a href="about-us.html">About Us<a/></li>
-<li><a href="our-songs.html">Our Songs<a/></li>
-<li><a href="see-us-play.html">See Us Play<a/></li>
-</ul>
-</body>
+	<head>
+		<title>Home</title>
+		<link type="text/css" rel="stylesheet"
+		href="css/my-first-stylesheet.css"/>
+	</head>
+	<body>
+		<header>
+			<p><sup>the</sup>nanonauts</p>
+			<h1>Home</h1>
+			<nav>
+				<ul>
+					<li class=selected>Home</li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="our-songs.html">Our Songs</a></li>
+					<li><a href="see-us-play.html">See Us Play</a></li>
+					<li><a href="playing-a-concert.html">Playing a Concert</a></li>
+				</ul>
+			</nav>
+		</header>
+		<h1>We are the Nanonauts!</h1>
+		<p><img src="images/nanonauts.jpg" alt="Picture of the Nanonauts"/></p>
+		<p>
+		<img id="display-image" onclick="swapImage()" src="images/NINJA_GREEN.png" width="180" height="240"/>
+		</p>
+		<p>Click the image to change it!</p>
+		<script>
+		function swapImage() {
+		var imageDisplayed = document.getElementById('display-image');
+		if (imageDisplayed.src.match("images/NINJA_GREEN.png")) {
+		imageDisplayed.src = "images/NINJA_BLUE.png";
+		}
+		else {
+		imageDisplayed.src = "images/NINJA_GREEN.png";
+		}
+		}
+		</script>
+		<p>This is our website. Click on a link to visit a page:</p>
+		<a href="https://youtu.be/bTk54gRVryk">Visit the Nanonauts on YouTube!</a>
+		<ul>
+			<li><a href="about-us.html">About Us<a/></li>
+			<li><a href="our-songs.html">Our Songs<a/></li>
+			<li><a href="see-us-play.html">See Us Play<a/></li>
+		</ul>
+	</body>
 </html>
