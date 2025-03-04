@@ -1,0 +1,269 @@
+a:link {
+color: blue;
+}
+
+a:visited {
+color: purple;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+a:active {
+text-decoration: underline;
+background-color: black;
+color: white;
+}
+
+p.top-tip {
+border: 4px dashed #00AFEB;
+border-radius: 10px;
+padding: 16px;
+background-color: #C5EBFB;
+}
+
+p.top-tip::before {
+color: Orange;
+content: "Mega Tip! ";
+font-weight: bold;
+}
+
+table {
+font-size: 70%;
+border-collapse: collapse;
+width: 100%;
+}
+
+th, td {
+border: 1px solid #000000;
+padding: 8px;
+text-align: left;
+}
+
+th {
+background-color: #FCAB68;
+}
+
+td {
+background-color: #BA99C0;
+}
+
+/* technical stuff - set sizing to border box method */
+/* set sizing to border box method */
+
+html {
+box sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+/* style the various structural elements */
+
+html {
+background-color: White;
+}
+
+/* set maximum and minimum widths for the body anc center within the viewport */
+
+body {
+background-color: White;
+color: #111111;
+font-family: calibri;
+margin-left: auto;
+margin-right: auto;
+max-width: 1024px;
+min-width: 256px;
+padding-left: 24px;
+padding-right: 24px;
+padding-top: 50px; 
+}
+
+/* add a fancy background*/
+html {
+background: radial-gradient(circle, SkyBlue, SkyBlue 50%, LightCyan 50%, SkyBlue);
+background-size: 8px 8px;
+}
+
+/* header */
+
+header p {
+float: left;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+}
+
+header h1 {
+font-size: 16px;
+text-align: right;
+}
+
+/* the menu*/
+
+nav ul {
+list-style-type: none;
+background-color: SkyBlue;
+border: 4px solid #111111;
+border-radius: 10px;
+font-family: sans-serif;
+font-weight: bold;
+padding: 16px;
+}
+nav ul li {
+display: inline;
+border-right: 2px solid #111111;
+padding-left: 8px;
+padding-right: 8px;
+
+}
+nav ul li:last-child {
+border-right: none;
+}
+nav ul li a {
+text-decoration: none;
+color: #111111;
+}
+nav li.selected {
+color: #606060;
+}
+
+nav li a:hover {
+text-decoration: underline;
+}
+
+/* biographies */
+
+section {
+background-color: #FFFFFF;
+margin-bottom: 24px;
+min-height: 320px;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+/* the aside */
+aside {
+}
+
+/* footer */
+
+footer p.copyright {
+float: left;
+margin-top: 0px;
+}
+
+footer p.contact {
+text-align: right;
+}
+
+
+
+/* small images are set to 200px in height */
+
+img.small {
+float: left;
+height: 200px;
+margin-bottom: 24px;
+margin-right: 24px;
+background-color: White;
+padding: 10px;
+}
+
+/* medium images can be 50% of the container element's width, up to 360px */
+
+img.medium {
+max-width: 360px;
+width: 50%;
+}
+
+/* large images can be 100% of the container element's width */
+img.large {
+width: 100%;
+}
+
+/* add the same style of border to the elements which are to have borders */
+body, section, img, article {
+border: 2px solid Gray;
+padding: 10px;
+border-radius: 16px;
+margin-bottom: 10px;
+}
+
+/* the elements that are specific to a wide viewport (over 56em) */
+@media all and (min-width: 900px)
+{
+article {
+float: left;
+width: 60%;
+}
+aside {
+top: 0;
+float: right;
+padding: 10px;
+width: 35%;
+}
+footer {
+clear: both;
+}
+
+}
+
+/* Style the navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Navigation menu styling 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+*/
+
+
+/*
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00c4ff;
+}
+*/
+/* Push content down to prevent it from being hidden under navbar 
+body {
+    padding-top: 50px;
+}
+*/
+/* Make it responsive 
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+*/
+
+#display-image:hover {
+  transform: scale(1.5); /* Make the image slightly larger on hover */
+}
