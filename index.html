@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>About Me</title>
-		<link type="text/css" rel="stylesheet"
-		href="css/stylesheet.css"/>
+		<title>Home</title>
+		<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
 	</head>
 	<body>
 		<aside id="portfolio">
 			<h1>My Portfolio</h1>
-			<section>
+			<section id="sidesection">
 				<h1>My Portfolio</h1>
 				<h2>Dashboards</h2>
 				<p>See the dashboards that I made</p>
@@ -51,11 +50,11 @@
 		</header>
 		<article id="about">
 			<h1>About Me</h1>
-			<h2>Hi, I'm John Rich</h2>
+			<h2>Hi, I'm John Rich!</h2>
 			<figure>
 			<p><img id="display-image" src="images/profile.png" alt="Picture of Me" onclick="swapImage()"/ width="200px" height="200px"></p>
-			<figcaption>click on my pic to change the background color</figcaption>
-			<figcaption>hover to zoom</figcaption>
+			<figcaption>Click on my pic to change the background color</figcaption>
+			<figcaption>Hover on my pic to zoom</figcaption>
 			</figure>
 			
 			<button onclick="showFunFact()">Fun Fact About Me!</button>
@@ -64,9 +63,15 @@
 			<h3>You can call me Nyxx</h3>
 			<p>I am currently taking my <strong><em>Diploma in Computer Science</em></strong> in the <strong>University of the Philippines - Open University</strong></p>
 			<p>This Web Page Project is part of our requirements in <strong>CMSC 207 Web Programming and Development</strong></p>
-			
-			<h2>Finance and Computer Science</h2>
-			<p>I am a <strong>Finance Analyst</strong> by profession, but my constant exposure with finance systems, analytics, and technologies reignited my passion in programming and to pursue <strong>Computer Science</strong>. I do not consider taking a  Computer Science course as a means for a career shift, but rather an additional skill that can facilitate financial processes and analysis.</p>
+			<section>
+				<h2>Education</h2>
+				<p>I earned my <em><strong>Bachelor of Science in Economics</strong></em> from <strong>Polytechnic University of the Philippines</strong>.</p> 
+				<p>Then went on to pursue my <em><strong>Master of Business Administration</strong></em> from <strong>University of the Philippines - Diliman</strong>.</p> 
+				<p>And now, my learning journey has led me to this program; <em><strong>Diploma in Computer Science</strong></em> from <strong>University of the Philippines - Open University</strong></p>
+				
+				<h2>Finance and Computer Science</h2>
+				<p>I am a <strong>Finance Analyst</strong> by profession, but my constant exposure with finance systems, analytics, and technologies reignited my passion in programming and led me to pursue <strong>Computer Science</strong>. I do not consider taking a  Computer Science course as a means for a career shift, but rather an additional skill that can facilitate financial processes and analysis.</p>
+			</section>
 		</article>
 		
 		<article id="hobbies-interest">
@@ -87,12 +92,12 @@
 				</p>
 				<p><strong>John of all trades, master of none</strong></p>
 				<p>I'm some sort of craftsman myself (that's what I would like to think).</p>
-				<p>I love doing handy work (or maybe I'm just a cheapskate who is unwilling to pay contractors). Throughout my DIY journey I've learned a thing or two about:</p>
+				<p>I love doing handy work and tinkering stuff (or maybe I'm just a cheapskate who is unwilling to pay contractors). Throughout my DIY journey I've learned a thing or two about:</p>
 					<ul>
 						<li>Set up my own Solar Panel System</li>
-						<li>Appliance and Furniture Repair</li>
+						<li>Simple Appliance and Furniture Repairs</li>
 						<li>Simple Plumbing and Electrical Works</li>
-						<li>Computer Repairs</li>
+						<li>Computer and Electronic Repairs</li>
 					</ul>
 			</section>
 			<section>
@@ -106,40 +111,49 @@
 			</section>
 		</article>
 		<article id="contact">
-			<h1>Contact</h1>
-			<section>
-				<h2>Daniel - Singer Extraordinaire</h2>
+			<h1>Contact Information</h1>
+			<section class="contactsection">
+				<h2>Email</h2>
 				<p>
-					<img class="small" src="images/NINJA_BLUE.png" alt="Picture of Daniel"/>
+					<img class="logo" src="images/email.png" alt="Logo of email"/>
 				</p>
-				<p>Daniel is the Nanonaut's singer. He likes to sing all the time - not just when he's playing with the Nanonauts! His mom and dad say he learned to sing before he learned to talk!</p>
-				<p>Daniel also plays clarinet and is learning the alto saxophone.</p>
+				<p>Personal Email: <a href="mailto:jrtnicdao@gmail.com">jrtnicdao@gmail.com</a></p>
+				<p>University Email: <a href="mailto:jtnicdao@alum.up.edu.ph">jtnicdao@alum.up.edu.ph</a></p>
 			</section>
-			<section>
-				<h2>Sam - One-man rhythm section</h2>
+			
+			<section class="contactsection">
+				<h2>Professional</h2>
 				<p>
-					<img class="small" src="images/NINJA_GREEN.png" alt="Picture of Sam"/>
+					<img class="logo" src="images/professional.png" alt="Logo of professional"/>
 				</p>
-				<p>Sam had music in his blood from the day he was born. Both his mom and dad play instruments and got him his first drum kit when he was only five years old, which led to trouble with the neighbors. On some songs he plays the bass guitar and on some songs the drums. Sam loves playin in the Nanonauts but hates carrying his drum kit around.</p>
+				<p>Company Email: <a href="mailto:jrtnicdao@gmail.com">sample@company.com (secret muna)</a></p>
+				<p>LinkedIn Profile: <a href="https://www.linkedin.com/in/john-rich-nicdao/" target="_blank">LinkedIn Site</a></p>
 			</section>
-			<section>
-				<h2>Holly - If it got strings, she'll play it</h2>
+			
+			<section class="contactsection">
+				<h2>Social Media</h2>
 				<p>
-					<img class="small" src="images/NINJA_YELLOW.png" alt="Picture of Holly"/>
+					<img class="logo" src="images/social.png" alt="Logo of social media"/>
 				</p>
-				<p>Acoustic guitar? Electric guitar? Ukelele? Harp? Holly can play them all/ She started off by making homemade guitars from the cardboard boxes and elastic bands until her uncle took pity on her and bought her a Spanish guitar for Christmas. After a few lessons at school she was flying!</p>
-			</section>		
-			<section>
-				<h2>Dervla - Keyboard maestro</h2>
+				<p>Facebook: <a href="https://www.linkedin.com/in/john-rich-nicdao/" target="_blank">Facebook Profile (Placeholder)</a></p>
+				<p>Instagram: <a href="https://www.linkedin.com/in/john-rich-nicdao/" target="_blank">Instagram Profile (Placeholder)</a></p>
+				<p>YouTube: <a href="https://www.linkedin.com/in/john-rich-nicdao/" target="_blank">YouTube Profile (Placeholder)</a></p>
+				<p>TikTok: <a href="https://www.linkedin.com/in/john-rich-nicdao/" target="_blank">TikTok Profile (Placeholder)</a></p>
+			</section>
+			
+			<section class="contactsection">
+				<h2>Portfolio Sites</h2>
 				<p>
-					<img class="small" src="images/NINJA_RED.png" alt="Picture of Dervla"/>
+					<img class="logo" src="images/portfolio.png" alt="Logo of portolio"/>
 				</p>
-				<p>Dervla has fourth grade piano but in secret prefers to play electronic keyboards. She loves synthesizer sounds and arguing with Holly over who should play the basslines.</p>
+				<p>GitHub: <a href="https://github.com/jrtnicdao" target="_blank">GitHub Site</a></p>
+				<p>Tableau Viz: <a href="https://public.tableau.com/app/profile/john.rich.nicdao/vizzes" target="_blank">Tableau Dashboards</a></p>
+				<p>Kaggle: <a href="https://www.kaggle.com/nyxx777" target="_blank">Kaggle Profile</a></p>
 			</section>
 		</article>
 
 		<footer>
-			<p class="copyright">All information copyright</p>
+			<p class="copyright">All information copyright ©</p>
 			<p class="contact">Contact: <a href="mailto:jrtnicdao@gmail.com">jrtnicdao@gmail.com</a></p>
 		</footer>
 	</body>

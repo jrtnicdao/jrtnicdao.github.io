@@ -1,3 +1,5 @@
+/* Change the Color of Links*/
+
 a:link {
 color: blue;
 }
@@ -8,6 +10,7 @@ color: purple;
 
 a:hover {
 text-decoration: underline;
+color: red;
 }
 
 a:active {
@@ -49,7 +52,7 @@ td {
 background-color: #BA99C0;
 }
 
-/* technical stuff - set sizing to border box method */
+
 /* set sizing to border box method */
 
 html {
@@ -60,31 +63,28 @@ box sizing: border-box;
 box-sizing: inherit;
 }
 
-/* style the various structural elements */
-
-html {
-background-color: White;
-}
-
 /* set maximum and minimum widths for the body anc center within the viewport */
 
 body {
-background-color: White;
-color: #111111;
+background-color: #021341;
+color: #021341;
 font-family: calibri;
 margin-left: auto;
 margin-right: auto;
-max-width: 1024px;
+max-width: 1200px;
 min-width: 256px;
 padding-left: 24px;
 padding-right: 24px;
 padding-top: 50px; 
 }
 
-/* add a fancy background*/
+/* add a fancy background ;*/
+
 html {
-background: radial-gradient(circle, SkyBlue, SkyBlue 50%, LightCyan 50%, SkyBlue);
-background-size: 8px 8px;
+  background-image: url(../images/Wallpaper.avif); /* Learnings: you need the two dots in front of the directory */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* header */
@@ -134,18 +134,24 @@ nav li a:hover {
 text-decoration: underline;
 }
 
-/* biographies */
+/* Adjust Sections */
 
 section {
-background-color: #FFFFFF;
-margin-bottom: 24px;
+background-color: White;
+margin-bottom: 12px;
 min-height: 320px;
-padding-left: 24px;
-padding-right: 24px;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+/* Change the background color of the sections */
+section:hover {
+background-color: #F3AC74;
 }
 
 /* the aside */
 aside {
+background-color: White;
 }
 
 /* footer */
@@ -160,14 +166,24 @@ text-align: right;
 }
 
 
-
 /* small images are set to 200px in height */
 
 img.small {
 float: left;
 height: 200px;
-margin-bottom: 24px;
-margin-right: 24px;
+width: 200px;
+margin-bottom: 12px;
+margin-right: 12px;
+background-color: White;
+padding: 10px;
+}
+
+img.logo {
+float: left;
+height: 100px;
+width: 100px;
+margin-bottom: 12px;
+margin-right: 12px;
 background-color: White;
 padding: 10px;
 }
@@ -186,7 +202,7 @@ width: 100%;
 
 /* add the same style of border to the elements which are to have borders */
 body, section, img, article {
-border: 2px solid Gray;
+border: 2px;
 padding: 10px;
 border-radius: 16px;
 margin-bottom: 10px;
@@ -196,6 +212,7 @@ margin-bottom: 10px;
 @media all and (min-width: 900px)
 {
 article {
+background-color: White;
 float: left;
 width: 60%;
 }
@@ -220,50 +237,28 @@ nav {
     text-align: center;
 }
 
-
-/* Navigation menu styling 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-*/
-
-
-/*
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #00c4ff;
-}
-*/
-/* Push content down to prevent it from being hidden under navbar 
-body {
-    padding-top: 50px;
-}
-*/
-/* Make it responsive 
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-}
-*/
-
+/* Make the image slightly larger on hover */
 #display-image:hover {
-  transform: scale(1.5); /* Make the image slightly larger on hover */
+transform: scale(1.4);
+background-color: #8FE3FF;
+}
+
+/* Change the background color of the side section */
+#sidesection:hover {
+background-color: #98E6FC;
+}
+
+#sidesection {
+background-color: White;
+}
+
+/* Adjust the Contact Section*/
+
+section.contactsection:hover {
+background-color: #98E6FC;
+}
+
+section.contactsection {
+min-height: 200px;
+
 }
